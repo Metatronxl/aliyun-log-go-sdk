@@ -1,4 +1,4 @@
-module github.com/aliyun/aliyun-log-go-sdk
+module github.com/Metatronxl/aliyun-log-go-sdk
 
 go 1.13
 
