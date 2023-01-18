@@ -201,6 +201,10 @@ func (producer *Producer) SendLogListWithCallBack(project, logstore, topic, sour
 
 }
 
+func (producer *Producer) GetProducerLogGroupSize() int64 {
+	return atomic.LoadInt64(&producer.producerLogGroupSize)
+}
+
 func (producer *Producer) waitTime() error {
 
 	if producer.producerConfig.MaxBlockSec > 0 {
